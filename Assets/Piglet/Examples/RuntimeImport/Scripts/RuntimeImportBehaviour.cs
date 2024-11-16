@@ -1,10 +1,7 @@
-﻿using Piglet;
-using UnityEngine;
+﻿using UnityEngine;
+using System;
+using Piglet;
 
-/// <summary>
-/// This MonoBehaviour provides a minimal example for using
-/// Piglet to import glTF models at runtime.
-/// </summary>
 public class RuntimeImportBehaviour : MonoBehaviour
 {
     /// <summary>
@@ -18,69 +15,67 @@ public class RuntimeImportBehaviour : MonoBehaviour
     private GameObject _model;
 
     /// <summary>
-    /// Unity callback that is invoked before the first frame.
-    /// Create the glTF import task and set up callbacks for
-    /// progress messages and successful completion.
+    /// Callback khi import thành công.
     /// </summary>
-    void Start()
+    private Action<GameObject> _onSuccess;
+
+    /// <summary>
+    /// Callback khi có lỗi.
+    /// </summary>
+    private Action<string> _onError;
+
+    /// <summary>
+    /// Bắt đầu quá trình import mô hình GLB.
+    /// </summary>
+    /// <param name="glbFilePath">Đường dẫn tới tệp GLB.</param>
+    /// <param name="onSuccess">Callback khi thành công.</param>
+    /// <param name="onError">Callback khi có lỗi.</param>
+    public void ImportModel(string glbFilePath, Action<GameObject> onSuccess, Action<string> onError)
     {
-        // Note: To import a local .gltf/.glb/.zip file, you may
-        // instead pass an absolute file path to GetImportTask
-        // (e.g. "C:/Users/Joe/Desktop/piggleston.glb"), or a byte[]
-        // array containing the raw byte content of the file.
-        _task = RuntimeGltfImporter.GetImportTask(
-            "https://awesomesaucelabs.github.io/piglet-webgl-demo/StreamingAssets/piggleston.glb");
+        _onSuccess = onSuccess;
+        _onError = onError;
+
+        _task = RuntimeGltfImporter.GetImportTask(glbFilePath);
         _task.OnProgress = OnProgress;
         _task.OnCompleted = OnComplete;
     }
 
     /// <summary>
-    /// Callback that is invoked by the glTF import task
-    /// after it has successfully completed.
+    /// Callback khi import hoàn thành.
     /// </summary>
-    /// <param name="importedModel">
-    /// the root GameObject of the imported glTF model
-    /// </param>
+    /// <param name="importedModel">GameObject của mô hình đã import.</param>
     private void OnComplete(GameObject importedModel)
     {
         _model = importedModel;
-        Debug.Log("Success!");
+        Debug.Log("Mô hình 3D đã được tải thành công.");
+        _onSuccess?.Invoke(_model);
     }
 
     /// <summary>
-    /// Callback that is invoked by the glTF import task
-    /// to report intermediate progress.
+    /// Callback để báo cáo tiến trình import.
     /// </summary>
-    /// <param name="step">
-    /// The current step of the glTF import process.  Each step imports
-    /// a different type of glTF entity (e.g. textures, materials).
-    /// </param>
-    /// <param name="completed">
-    /// The number of glTF entities (e.g. textures, materials) that have been
-    /// successfully imported for the current import step.
-    /// </param>
-    /// <param name="total">
-    /// The total number of glTF entities (e.g. textures, materials) that will
-    /// be imported for the current import step.
-    /// </param>
     private void OnProgress(GltfImportStep step, int completed, int total)
     {
         Debug.LogFormat("{0}: {1}/{2}", step, completed, total);
     }
 
     /// <summary>
-    /// Unity callback that is invoked after every frame.
-    /// Here we call MoveNext() to advance execution
-    /// of the glTF import task. Once the model has been successfully
-    /// imported, we auto-spin the model about the y-axis.
+    /// Unity callback được gọi mỗi frame.
+    /// Tiến hành import mô hình từng bước.
     /// </summary>
     void Update()
     {
-        // advance execution of glTF import task
-        _task.MoveNext();
-
-        // spin model about y-axis
-        if (_model != null)
-            _model.transform.Rotate(0, 1, 0);
+        if (_task != null)
+        {
+            try
+            {
+                _task.MoveNext();
+            }
+            catch (Exception ex)
+            {
+                _onError?.Invoke("Lỗi khi import mô hình: " + ex.Message);
+                _task = null;
+            }
+        }
     }
 }

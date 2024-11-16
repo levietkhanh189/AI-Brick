@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using MVoxelizer.MVEditor;
 using UnityEngine;
 
-namespace MVoxelizer.MVEditor
+namespace MVoxelizer
 {
     [System.Serializable]
     public class MeshVoxelizerSetting
