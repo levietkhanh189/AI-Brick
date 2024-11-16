@@ -1,0 +1,2362 @@
+https://api.figma.com/v1/files/tVu9dXMM4Qb0Vuq7Kh7nvj?depth=2&plugin_data=shared
+{
+    "document": {
+        "id": "0:0",
+        "name": "Document",
+        "type": "DOCUMENT",
+        "scrollBehavior": "SCROLLS",
+        "children": [
+            {
+                "id": "0:1",
+                "name": "Main Design",
+                "type": "CANVAS",
+                "scrollBehavior": "SCROLLS",
+                "children": [
+                    {
+                        "id": "17:2",
+                        "name": "Login",
+                        "visible": false,
+                        "type": "GROUP",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": false,
+                        "background": [
+                            
+                        ],
+                        "fills": [
+                            
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "rectangleCornerRadii": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "cornerSmoothing": 0.0,
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 0.0,
+                            "g": 0.0,
+                            "b": 0.0,
+                            "a": 0.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3770.0,
+                            "y": -1980.50,
+                            "width": 7540.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": null,
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:1321",
+                        "name": "Home - No Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3770.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -3776.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:1401",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3220.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -3226.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:1543",
+                        "name": "Home - Load Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2670.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2676.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:1619",
+                        "name": "AR Show",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2120.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2126.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:1663",
+                        "name": "Home - Load Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -1570.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -1576.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:1870",
+                        "name": "Setting",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -470.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -476.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:1723",
+                        "name": "Product Listing",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -1040.0,
+                            "y": -925.50,
+                            "width": 375.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -1046.0,
+                            "y": -928.50,
+                            "width": 387.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:1964",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3220.0,
+                            "y": 129.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -3226.0,
+                            "y": 126.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:2068",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2670.0,
+                            "y": 129.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2676.0,
+                            "y": 126.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:2172",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2120.0,
+                            "y": 129.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2126.0,
+                            "y": 126.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:2276",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -1570.0,
+                            "y": 129.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -1576.0,
+                            "y": 126.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:2380",
+                        "name": "Model Viewer",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3220.0,
+                            "y": 1135.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -3226.0,
+                            "y": 1132.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "12:2431",
+                        "name": "Load Model - Ads",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2701.0,
+                            "y": 1135.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2707.0,
+                            "y": 1132.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    }
+                ],
+                "backgroundColor": {
+                    "r": 0.96078431606292725,
+                    "g": 0.96078431606292725,
+                    "b": 0.96078431606292725,
+                    "a": 1.0
+                },
+                "prototypeStartNodeID": null,
+                "flowStartingPoints": [
+                    
+                ],
+                "prototypeDevice": {
+                    "type": "NONE",
+                    "rotation": "NONE"
+                }
+            },
+            {
+                "id": "22:3",
+                "name": "Main Design 2",
+                "type": "CANVAS",
+                "scrollBehavior": "SCROLLS",
+                "children": [
+                    {
+                        "id": "22:4",
+                        "name": "Login",
+                        "visible": false,
+                        "type": "GROUP",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": false,
+                        "background": [
+                            
+                        ],
+                        "fills": [
+                            
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "rectangleCornerRadii": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "cornerSmoothing": 0.0,
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 0.0,
+                            "g": 0.0,
+                            "b": 0.0,
+                            "a": 0.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3770.0,
+                            "y": -1980.50,
+                            "width": 7540.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": null,
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:1324",
+                        "name": "Home - No Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3770.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -3776.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:1404",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3220.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -3226.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:1546",
+                        "name": "Home - Load Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2670.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2676.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:1622",
+                        "name": "AR Show",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2120.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2126.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:1666",
+                        "name": "Home - Load Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -1570.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -1576.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:1726",
+                        "name": "Setting",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -470.0,
+                            "y": -925.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -476.0,
+                            "y": -928.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:1820",
+                        "name": "Product Listing",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -1040.0,
+                            "y": -925.50,
+                            "width": 375.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -1046.0,
+                            "y": -928.50,
+                            "width": 387.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:1967",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3220.0,
+                            "y": 129.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -3226.0,
+                            "y": 126.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:2071",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2670.0,
+                            "y": 129.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2676.0,
+                            "y": 126.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:2175",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2120.0,
+                            "y": 129.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2126.0,
+                            "y": 126.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:2279",
+                        "name": "Pop Up New Model",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -1570.0,
+                            "y": 129.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -1576.0,
+                            "y": 126.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:2383",
+                        "name": "Model Viewer",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -3220.0,
+                            "y": 1135.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -3226.0,
+                            "y": 1132.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    },
+                    {
+                        "id": "22:2434",
+                        "name": "Load Model - Ads",
+                        "type": "FRAME",
+                        "scrollBehavior": "SCROLLS",
+                        "children": [
+                            
+                        ],
+                        "blendMode": "PASS_THROUGH",
+                        "clipsContent": true,
+                        "background": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "fills": [
+                            {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                }
+                            }
+                        ],
+                        "strokes": [
+                            
+                        ],
+                        "strokeWeight": 1.0,
+                        "strokeAlign": "INSIDE",
+                        "backgroundColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "absoluteBoundingBox": {
+                            "x": -2701.0,
+                            "y": 1135.50,
+                            "width": 390.0,
+                            "height": 844.0
+                        },
+                        "absoluteRenderBounds": {
+                            "x": -2707.0,
+                            "y": 1132.50,
+                            "width": 402.0,
+                            "height": 856.0
+                        },
+                        "constraints": {
+                            "vertical": "TOP",
+                            "horizontal": "LEFT"
+                        },
+                        "effects": [
+                            {
+                                "type": "DROP_SHADOW",
+                                "visible": true,
+                                "color": {
+                                    "r": 0.070588238537311554,
+                                    "g": 0.058823529630899429,
+                                    "b": 0.15686275064945221,
+                                    "a": 0.11999999731779099
+                                },
+                                "blendMode": "NORMAL",
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 3.0
+                                },
+                                "radius": 6.0,
+                                "showShadowBehindNode": true
+                            }
+                        ],
+                        "interactions": [
+                            
+                        ]
+                    }
+                ],
+                "backgroundColor": {
+                    "r": 0.96078431606292725,
+                    "g": 0.96078431606292725,
+                    "b": 0.96078431606292725,
+                    "a": 1.0
+                },
+                "prototypeStartNodeID": null,
+                "flowStartingPoints": [
+                    
+                ],
+                "prototypeDevice": {
+                    "type": "NONE",
+                    "rotation": "NONE"
+                }
+            }
+        ]
+    },
+    "components": {
+        
+    },
+    "componentSets": {
+        
+    },
+    "schemaVersion": 0,
+    "styles": {
+        
+    },
+    "name": "Lego - AR",
+    "lastModified": "2024-11-16T08:53:05Z",
+    "thumbnailUrl": "https://s3-alpha.figma.com/thumbnails/d434dab7-1b0a-49f4-be95-9c013e3f0d6b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC7RH7DFJ6%2F20241114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241114T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f118897155acfe462d50d75537923cceba8ae764f33061c6d9d67c4381fe3e1f",
+    "version": "2151497519356864699",
+    "role": "owner",
+    "editorType": "figma",
+    "linkAccess": "view"
+}
