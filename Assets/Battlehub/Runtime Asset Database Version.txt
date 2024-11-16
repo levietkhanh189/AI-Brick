@@ -1,0 +1,178 @@
+Runtime Asset Database v1.4.5
+
+Changelog
+1.4.5
+Added:
+- Option to enable/disable properties generation (Tools >Surrogate Settings >Include Properties).
+Fixed:
+- Surrogate generator generates non-compilable code when there are properties with a generic, abstract, or interface type.
+
+1.4.4
+Added:
+- Tools/Runtime Asset Database/Clean command.
+- DateTime fields support.
+Fixed:
+- Surrogates generator for types from Unity.Mathematics.
+- Surrogates generator for types with List<Enum> fields.
+
+1.4.3
+Fixed:
+- DynamicSourrogate.Deserialize method.
+
+1.4.2
+Fixed:
+- DynamicSurrogate: Get private fields from base types.
+- DynamicSurrogate: Reset method.
+- DynamicSurrogate: Use ISerializationCallbackReceiver for all objects during serialization/deserialization.
+- DynamicSurrogate: Use of the FormelySerializedAs attribute.
+- Warm-up serializer.
+- DynamicSurrogate: Consider fields of reference types that have a corresponding surrogate as SerializeReference .
+
+1.4.1
+Fixed:
+- Dynamic Enumerator.
+
+1.4.0
+Added:
+- Dynamic Surrogates 
+https://github.com/Battlehub0x/RuntimeAssetDatabase?tab=readme-ov-file#dynamic-surrogates-preview
+
+1.3.1
+Fixed:
+- Surrogates Generator nested structs handling.
+- Throw exception with readable message when asset creation is failed.
+- Typo, rename GetObjectMap.
+
+1.3.0
+Added:
+- IAssetDatabase.ExportAssetsAsync.
+- IAssetDatabase.ImportAssetsAsync.
+Changed:
+- IDataLayer.CompressZipAsync.
+- IDataLayer.UncompressZipAsync.
+Fixed:
+- app.js example MacOS.
+- Save and load the active state of game objects using RectTransform.
+
+1.2.6
+Fixed:
+- FileSystemDataLayer.MoveFolderAsync (remove Task.Run for WebGL compatibility)
+
+1.2.5
+Added:
+- Threading support to HttpDataLayer
+Updated:
+- Http server sample (app.js)
+
+1.2.4 
+Added:
+- HttpDataLayer, WebProjectBrowser sample
+
+1.2.3
+Fixed:
+- IAssetDatabase.DetachAssetAsync (incorrect detection of external dependencies when cloning subassets).
+Changed:
+- Do not terminate the ObjectEnumerator enumeration when null is returned from the GetNext method.
+
+1.2.2
+Fixed:
+- WebGL build
+
+1.2.1
+Fixed:
+- IAssetDatabase.HasChanges, ApplyChangesAndSave methods.
+Changed:
+- Skip non-serializable types in ObjectTreeEnumerator.
+Added:
+- IThumbnailUtil.Layer property.
+- ExternalAssetListGen.GenerateSceneAssetsList method.
+
+1.2.0
+Fixed:
+- TryGetMeta(string fileID) for folders with names starting with "."
+- SurrigatesGen to generate idmap.AddObject(o, id) instead of idmap.SetID(o, id).
+- Surrogate generation for IValueSurrogates.
+- JsonSerializer no longer closes underlying streams.
+- The EditorModel.ExtractSubassets method no longer returns external assets.
+- In some cases, IsCyclicNesting could not detect a cyclic nesting.
+- ApplyChangesAndSaveAsync to properly handle deleted objects and components.
+- Use Texture2D.EncodeToPng EncodeToJpg if AsyncGPU readback fails. 
+Improved:
+- ObjectEnumerator simplified.
+Changed:
+- Type of the first param to System.Object in IThumbnailUtil.CreateThumbnailAsync.
+- ObjectTreeEnumerator will no longer return null, destroyed and objects with HideFlags.DontSave.
+- ShaderUtil moved to separate assembly.
+- MaterialUtils renamed to aviod conflicts with the Runtime Editor asset.
+Added:
+- Support for "dynamic types" without need to create surrogates for them.
+- SpriteSurrogate.
+- UnityEventSurrogate.
+- LayerMaskSurrogate.
+- RectTransformSurrogate.
+- Tag property to TransformSurrogate.
+- Ability to specify enumerator type using SurrogateAttribute.
+- cloneSubAssets param to IAssetDatabase.CanDetach method.
+- IAssetDatabase.SerializeObject, DeserializeObject.
+- External Asset Lists.
+- IAssetDatabase.ShaderUtil property
+Removed:
+- camera.aspect removed from CameraSurrogate
+1.1.5
+Added:
+- Overload method AssetDatabase.ImportExternalAssetAsync that accepts an asset ID parameter.
+Fixed: 
+- Fix asset variants cyclic nesting detection.
+- Deep copy when duplicating assets.
+Removed:
+- Key and MessagePack object attributes from surrogates.
+Improved:
+- Fault tolerance during deserialization.
+- Search large lists in the "Create Surrogate" and "Update Surrogate" windows.
+1.1.4
+Improved:
+- GameObjectEnumerator performance.
+Added:
+- Creating a separate light in a thumbnail util when creating a thumbnail.
+- ISurrogatesSerializer.CreateSurrogate(Type type) method.
+Fixed:
+- Check if thumbnail util exists to determine if thumbnail can be created.
+- Prevent an exception from occurring if LoadAsset is called with a folder id.
+1.1.3
+Fixed:
+- UnityException: get_INTERNAL_defaultRenderPipeline can only be called from the main thread in URP build.
+- Null reference exception when deserializing material and fallback shader is missing.
+1.1.2
+Fixed:
+- Infinite loop when an exception occurs during deserialization.
+1.1.1
+Fixed:
+- It is not possible to remove a component from an external component instance
+Added:
+- Message indicating that the external resource cannot be duplicated
+1.1.0 
+Fixed:
+- The update surrogate window generates incorrect IDs. 
+- Saving non-instantiable assets does not work.
+- MaterialSurrogate throws a null reference exception if the shader is not found.
+- RegisterExternalAsset is called with incorrect parameters.
+Added:
+- Ability for external loaders to generate IDs.
+- IDataLayer.CompressZipAsync, IDataLayer.UncompressZipAsync.
+- IDataLayer.CopyFolderAsync.
+- search pattern param to GetTreeAsync method.
+- GetAssetTypeByTypeID method.
+1.0.6 Fixed:
+- Ability to use relative path as file/project id
+1.0.5 Added:
+- Add BinaryData,
+- Ability to save and load binary data bypassing the serializer.
+1.0.4 Changed:
+- Don't serialize thumbnails, save png binary data.
+1.0.3 Fixed:
+- Generate missing IDs for new components when loading an external asset.
+1.0.2 Added:
+- Newtonsoft.Json serializer support (preview).
+- glTFast external asset loader (https://github.com/atteneder/glTFast).
+1.0.1 - WebGL support.
+1.0.0 - First release.

@@ -1,0 +1,27 @@
+{
+    "name": "Storage.Samples.ProjectBrowser",
+    "rootNamespace": "",
+    "references": [
+        "GUID:962b533f12105a74f86684e3ee087776",
+        "GUID:b3b972c730c2900458f27e5228872ae6",
+        "GUID:93116c5eb6fe5ec41a0be69ac8923508",
+        "GUID:654f8e5b02fb16f47afe9f4945e69a51",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:84651a3751eca9349aac36a66bba901b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.addressables",
+            "expression": "",
+            "define": "UNITY_ADDRESSABLES"
+        }
+    ],
+    "noEngineReferences": false
+}
