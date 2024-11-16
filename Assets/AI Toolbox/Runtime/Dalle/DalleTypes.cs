@@ -23,6 +23,6 @@ public class UrlClass {
 [Serializable]
 public class CreateImageResponse {
     public int created;
-    public List<Editor.UrlClass> data;
+    public List<UrlClass> data;
 }
 }
