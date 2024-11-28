@@ -8,9 +8,11 @@ namespace MVoxelizer
     public class Voxel : MonoBehaviour
     {
         [HideInInspector] public Mesh m_mesh = null;
-
+        Vector2 uv;
         public void UpdateVoxel(Mesh mesh, Vector2 uv)
         {
+            this.uv = uv;
+
             if (m_mesh == null) m_mesh = new Mesh();
             m_mesh.Clear();
             Vector2[] uvs = new Vector2[mesh.uv.Length]; 
@@ -21,6 +23,8 @@ namespace MVoxelizer
             m_mesh.triangles = mesh.triangles;
             GetComponent<MeshFilter>().sharedMesh = m_mesh;
         }
+
+
 
         private void OnDestroy()
         {

@@ -15,5 +15,8 @@ MonoBehaviour:
   ImagePaths:
   - /Users/timo/Library/Application Support/DefaultCompany/Lego AR/image_638673824877683530.png
   - /Users/timo/Library/Application Support/DefaultCompany/Lego AR/image_638673824906316600.png
+  - /Users/timo/Library/Application Support/DefaultCompany/Lego AR/image_638674466834381290.png
   ModelPaths:
   - /Users/timo/Library/Application Support/DefaultCompany/Lego AR/model_638673829026408770.glb
+  - /Users/timo/Library/Application Support/DefaultCompany/Lego AR/model_638673832854346000.glb
+  - /Users/timo/Library/Application Support/DefaultCompany/Lego AR/model_638674467283584410.glb

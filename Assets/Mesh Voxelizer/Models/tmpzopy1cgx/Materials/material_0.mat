@@ -75,8 +75,8 @@ Material:
     - _QueueOffset: 0
     - _alphaCutoff: 0
     - _linear: 1
-    - _metallicFactor: 0.0023905288
-    - _roughnessFactor: 0.45658574
+    - _metallicFactor: 0
+    - _roughnessFactor: 5
     - _runtime: 0
     m_Colors:
     - _baseColorFactor: {r: 1, g: 1, b: 1, a: 1}

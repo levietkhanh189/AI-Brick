@@ -12,12 +12,12 @@ public class ModelLoader : MonoBehaviour
     }
 
     [Sirenix.OdinInspector.Button]
-    public void GenerateModel(string imagePath)
+    public void GenerateModel(string imagePath,Action<GameObject> action)
     {
         if (File.Exists(imagePath))
         {
             byte[] imageData = File.ReadAllBytes(imagePath);
-            modelAPI.Generate3DModel(imageData, OnModelGenerated, OnError);
+            modelAPI.Generate3DModel(imageData,(GameObject model) => { OnModelGenerated(model, action); } , OnError);
         }
         else
         {
@@ -25,12 +25,16 @@ public class ModelLoader : MonoBehaviour
         }
     }
 
-    private void OnModelGenerated(GameObject model)
+    private void OnModelGenerated(GameObject model,Action<GameObject> action)
     {
         Debug.Log("Mô hình 3D đã được tạo và hiển thị trong scene.");
 
-        // Bạn có thể di chuyển hoặc gán các thuộc tính cho mô hình tại đây
         model.transform.position = Vector3.zero;
+
+        GameObject child = model.transform.GetChild(0).GetChild(0).gameObject;
+        child.transform.parent = MainController.Instance.transform;
+        child.transform.position = Vector3.zero;
+        action(child);
     }
 
     private void OnError(string error)

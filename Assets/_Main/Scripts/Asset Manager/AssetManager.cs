@@ -55,8 +55,7 @@ namespace Battlehub.Storage.Samples
             await CreateAndSaveThumbnailAsync(myAsset, fileID);
 
             // Giải phóng instance của asset
-            if(isRelease)
-                await assetDatabase.ReleaseAsync(myAsset);
+            await assetDatabase.ReleaseAsync(myAsset);
 
             return fileID;
         }
@@ -73,9 +72,6 @@ namespace Battlehub.Storage.Samples
                 Debug.LogError("AssetDatabase chưa được khởi tạo. Vui lòng gọi InitializeAssetDatabaseAsync() trước.");
                 return null;
             }
-
-            // Unload tất cả assets để giải phóng bộ nhớ
-            await assetDatabase.UnloadAllAssetsAsync(destroy: true);
 
             // Tải asset theo fileID
             await assetDatabase.LoadAssetAsync(fileID);

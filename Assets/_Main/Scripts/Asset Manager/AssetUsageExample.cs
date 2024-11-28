@@ -13,7 +13,7 @@ namespace Battlehub.Storage.Samples
         [SerializeField]
         [Tooltip("Tham chiếu đến AssetManager.")]
         private AssetManager assetManager;
-
+        public Image image;
 
         private async void Start()
         {
@@ -39,6 +39,14 @@ namespace Battlehub.Storage.Samples
         public async Task<GameObject> LoadAsset(string name)
         {
             return await assetManager.LoadAssetAsync(name);
+        }
+
+        [Sirenix.OdinInspector.Button]
+        public async Task<Sprite> LoadThumb(string name)
+        {
+            Sprite sprite = await assetManager.LoadThumbnailAsync(name);
+            image.sprite = sprite;
+            return sprite;
         }
     }
 }

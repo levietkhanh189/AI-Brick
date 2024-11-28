@@ -40,6 +40,8 @@ namespace MVoxelizer.MVRuntime
 
         public override GameObject VoxelizeMesh()
         {
+            Debug.Log("VoxelizeMesh");
+
             GameObject go = base.VoxelizeMesh();
             if (go != null)
             {
@@ -51,7 +53,7 @@ namespace MVoxelizer.MVRuntime
 
             // Nếu bạn muốn hiển thị progress bar tùy chỉnh, bạn có thể implement nó ở đây
             // Ví dụ: UpdateProgressBar("Voxelizing Mesh...", progress);
-
+            Debug.Log("return GameObject");
             return go;
         }
 
