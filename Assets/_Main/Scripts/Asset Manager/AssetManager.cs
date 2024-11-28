@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using Battlehub.Storage.EditorAttributes;
 using System.Threading.Tasks;
 
-namespace Battlehub.Storage.Samples
+namespace Battlehub.Storage.Brick
 {
     /// <summary>
     /// Quản lý việc tạo, lưu, tải assets và thumbnails.
@@ -59,6 +59,13 @@ namespace Battlehub.Storage.Samples
 
             return fileID;
         }
+
+        public async void ReleaseAsync(GameObject myAsset)
+        {
+            // Giải phóng instance của asset
+            await assetDatabase.ReleaseAsync(myAsset);
+        }
+
 
         /// <summary>
         /// Tải asset từ cơ sở dữ liệu.

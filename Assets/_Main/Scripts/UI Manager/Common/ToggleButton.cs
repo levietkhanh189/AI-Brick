@@ -16,11 +16,9 @@ public class ToggleButton : MonoBehaviour
 
     public void Init(Action<int> onClick)
     {
-        Debug.Log("ToggleButton id " + id + " init");
         button = GetComponent<Button>();
         button.onClick.AddListener(()=> {
             onClick(id);
-            Debug.Log("ToggleButton id " + id);
         });
     }
 

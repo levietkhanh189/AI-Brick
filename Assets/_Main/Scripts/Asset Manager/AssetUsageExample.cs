@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Threading.Tasks;
 
-namespace Battlehub.Storage.Samples
+namespace Battlehub.Storage.Brick
 {
     /// <summary>
     /// Ví dụ về cách sử dụng AssetManager trong thực tế.

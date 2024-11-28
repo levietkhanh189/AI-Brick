@@ -64,6 +64,7 @@ public class DTNPoolingGameManager : DTNMono
         nCom.gameObject.SetActive(true);
         return nCom.gameObject;
     }
+
     public GameObject GenerateObject(GameObject template,Vector3 pos,Quaternion rot, Transform transform)
     {
         int key = template.GetHashCode();

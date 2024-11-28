@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Battlehub.Storage.Brick;
 
 public class MainController : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class MainController : MonoBehaviour
     public VoxelImage voxelImage;
     public VoxelizerController voxelizerController;
     public ModelLoader modelLoader;
-    private VoxelAssemblyController voxelAssemblyController;
+    private VoxelGroupController voxelGroupController;
     private GameObject sourceObject;
     private LoadModelScreen loadModelScreen;
 
@@ -29,12 +30,6 @@ public class MainController : MonoBehaviour
     public void ConnectViewerScreen(Action<VoxelGroupController> action)
     {
         viewerModelAction = action;
-    }
-
-    public void SetModel(VoxelGroupController voxelGroup)
-    {
-        if(viewerModelAction != null)
-            viewerModelAction(voxelGroup);
     }
 
     public void LoadMainScreen(int id)
@@ -97,21 +92,63 @@ public class MainController : MonoBehaviour
     {
         voxelImage.gameObject.SetActive(false);
 
-        if(voxelAssemblyController != null)
-        {
-            ///Tesst
-            Destroy(voxelAssemblyController.gameObject);
-        }
+        if(voxelGroupController != null)
+            AssetUsage.Instance.Release(voxelGroupController.gameObject);
 
-        voxelAssemblyController = gameObject.AddComponent<VoxelAssemblyController>();
+        VoxelAssemblyController voxelAssemblyController = gameObject.AddComponent<VoxelAssemblyController>();
+        voxelGroupController = voxelAssemblyController.groupController;
         loadModelScreen.Hide();
 
         ModelEditorScreen modelEditorScreen = DTNWindow.FindTopWindow().ShowSubView<ModelEditorScreen>();
-        modelEditorScreen.SetModel(voxelAssemblyController.groupController);
+        modelEditorScreen.SetModel(voxelGroupController);
     }
 
     public void MainScreenActive(bool value)
     {
         mainScreen.gameObject.SetActive(value);
+    }
+
+    public void SetModel(VoxelGroupController voxelGroup)
+    {
+        if (viewerModelAction != null)
+            viewerModelAction(voxelGroup);
+    }
+
+    public void SaveBlockModel(GameObject gameObject,string name)
+    {
+        AssetUsage.Instance.CreateAsset(name, gameObject, (bool value,string id) => {
+            if (value)
+            {
+                FileManager.Instance.NewFile(name);
+
+                LoadBlockModel(id, (bool value, GameObject myObject) =>
+                {
+                    if (voxelGroupController != null)
+                        AssetUsage.Instance.Release(voxelGroupController.gameObject);
+
+                    voxelGroupController = myObject.AddComponent<VoxelGroupController>();
+                    voxelGroupController.Init();
+                    SetModel(voxelGroupController);
+                });
+            }
+        });
+    }
+
+    public void LoadBlockModel(string name, Action<bool, GameObject> action)
+    {
+        AssetUsage.Instance.LoadAsset(name, action);
+    }
+
+    public void ShowBlockModel(string name)
+    {
+        LoadBlockModel(name, (bool value, GameObject myObject) =>
+        {
+            if (voxelGroupController != null)
+                AssetUsage.Instance.Release(voxelGroupController.gameObject);
+
+            voxelGroupController = myObject.AddComponent<VoxelGroupController>();
+            voxelGroupController.Init();
+            SetModel(voxelGroupController);
+        });
     }
 }
