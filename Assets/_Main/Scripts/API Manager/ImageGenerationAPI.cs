@@ -6,8 +6,6 @@ using System.IO;
 
 public class ImageGenerationAPI : MonoBehaviour
 {
-    private const string ImageGenerationUrl = "https://api.stability.ai/v2beta/stable-image/generate/core";
-
     /// <summary>
     /// Gửi yêu cầu tới API để tạo hình ảnh từ prompt.
     /// </summary>
@@ -32,9 +30,9 @@ public class ImageGenerationAPI : MonoBehaviour
         form.AddBinaryData("none", emptyData, "", "application/octet-stream");
 
         // Tạo yêu cầu UnityWebRequest
-        using (UnityWebRequest request = UnityWebRequest.Post(ImageGenerationUrl, form))
+        using (UnityWebRequest request = UnityWebRequest.Post(ApiManager.ImageGenerationUrl, form))
         {
-            request.SetRequestHeader("authorization", $"Bearer {ApiToken.Get()}");
+            request.SetRequestHeader("authorization", $"Bearer {ApiManager.Get()}");
             request.SetRequestHeader("accept", "image/*");
 
             // Gửi yêu cầu và chờ phản hồi

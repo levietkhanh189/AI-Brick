@@ -6,7 +6,6 @@ using System.IO;
 
 public class ModelGenerationAPI : MonoBehaviour
 {
-    private const string ModelGenerationUrl = "https://api.stability.ai/v2beta/3d/stable-fast-3d";
     private RuntimeImportBehaviour importer;
     /// <summary>
     /// Gửi yêu cầu tới API để tạo mô hình 3D từ hình ảnh.
@@ -26,9 +25,9 @@ public class ModelGenerationAPI : MonoBehaviour
         form.AddBinaryData("image", imageData, "image.png", "image/png");
 
         // Tạo yêu cầu UnityWebRequest
-        using (UnityWebRequest request = UnityWebRequest.Post(ModelGenerationUrl, form))
+        using (UnityWebRequest request = UnityWebRequest.Post(ApiManager.ModelGenerationUrl, form))
         {
-            request.SetRequestHeader("authorization", $"Bearer {ApiToken.Get()}");
+            request.SetRequestHeader("authorization", $"Bearer {ApiManager.Get()}");
 
             // Gửi yêu cầu và chờ phản hồi
             yield return request.SendWebRequest();

@@ -72,3 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/_Main/Scripts/API Manager/Api.cs
 Assets/_Main/Scripts/API Manager/Api.cs.meta
+Assets/_Main/Scripts/API Manager/ApiManager.cs
+Assets/_Main/Scripts/API Manager/ApiManager.cs.meta
