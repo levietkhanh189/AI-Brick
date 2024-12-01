@@ -27,6 +27,7 @@ public class BrickLoaderManager : MonoBehaviour
         {
             BlockButton blockBtn = DTNPoolingGameManager.Instance.GenerateObject(blockButton.gameObject, buttonContent).GetComponent<BlockButton>();
             AssetUsage.Instance.LoadAsset(item.id, (bool value, GameObject block) => {
+                block.transform.parent = this.transform;
                 blocks.Add(block);
             });
             AssetUsage.Instance.LoadThumb(item.id, (bool value, Sprite sprite) => {

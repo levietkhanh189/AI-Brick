@@ -1220,6 +1220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1314313082}
+  - component: {fileID: 1314313083}
   m_Layer: 0
   m_Name: Database
   m_TagString: Untagged
@@ -1243,8 +1244,20 @@ Transform:
   - {fileID: 449991206}
   - {fileID: 411973015}
   - {fileID: 163965325}
-  m_Father: {fileID: 1412651757}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1314313083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314313081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 049b34d1ef905445d9716e73eee23ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1352548505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1379,6 @@ Transform:
   - {fileID: 816956000}
   - {fileID: 1198002533}
   - {fileID: 494012996}
-  - {fileID: 1314313082}
   - {fileID: 1375677168}
   - {fileID: 1601122626}
   m_Father: {fileID: 0}
@@ -1674,3 +1686,4 @@ SceneRoots:
   - {fileID: 1272597268}
   - {fileID: 1412651757}
   - {fileID: 1352548507}
+  - {fileID: 1314313082}
