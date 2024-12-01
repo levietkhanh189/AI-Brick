@@ -176,6 +176,11 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             m_SpawnOptionIndex = -1;
         }
 
+        public void SetListObject(List<GameObject> objectPrefabs)
+        {
+            this.objectPrefabs = objectPrefabs;
+        }
+
         /// <summary>
         /// Attempts to spawn an object from <see cref="objectPrefabs"/> at the given position. The object will have a
         /// yaw rotation that faces <see cref="cameraToFace"/>, plus or minus a random angle within <see cref="spawnAngleRange"/>.
