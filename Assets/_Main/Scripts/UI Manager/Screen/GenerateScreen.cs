@@ -28,6 +28,11 @@ public class GenerateScreen : DTNView
             Hide();
         });
 
+        uploadFile.onClick.AddListener(() =>
+        {
+            OpenGallery();
+        });
+
 
         generate.onClick.AddListener(() =>
         {
@@ -49,6 +54,25 @@ public class GenerateScreen : DTNView
             Hide();
         });
     }
+
+    public void OpenGallery()
+    {
+        if (NativeGallery.IsMediaPickerBusy())
+        {
+            return;
+        }
+
+        // Mở Native Gallery để chọn ảnh
+        NativeGallery.GetImageFromGallery((path) =>
+        {
+            if (path != null)
+            {
+
+                texture = NativeGallery.LoadImageAtPath(path, 1024);
+            }
+        }, "Select an image", "image/*");
+    }
+
 
     public void SetupOption(OptionGenerate option)
     {

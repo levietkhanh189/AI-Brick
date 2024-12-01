@@ -185,6 +185,85 @@ MonoBehaviour:
       Max: 0
     PropertyTexDims: 00000000
     IsHidden: 00
+  - Name: CW/RimAlpha
+    PropertyCount: 2
+    PropertyDescriptions:
+    - Main Tex
+    - Color
+    PropertyNames:
+    - _MainTex
+    - _Color
+    PropertyTypes: 0400000000000000
+    PropertyRangeLimits:
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    PropertyTexDims: 0200000000000000
+    IsHidden: 0000
+  - Name: CW/RimOpaque
+    PropertyCount: 6
+    PropertyDescriptions:
+    - Main Tex
+    - Color
+    - Color 1
+    - Color 2
+    - Rim
+    - Shift
+    PropertyNames:
+    - _MainTex
+    - _Color
+    - _Color1
+    - _Color2
+    - _Rim
+    - _Shift
+    PropertyTypes: 040000000000000000000000000000000200000002000000
+    PropertyRangeLimits:
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    PropertyTexDims: 020000000000000000000000000000000000000000000000
+    IsHidden: 000000000000
+  - Name: CW/Skybox
+    PropertyCount: 3
+    PropertyDescriptions:
+    - Color 1
+    - Color 2
+    - Scale
+    PropertyNames:
+    - _Color1
+    - _Color2
+    - _Scale
+    PropertyTypes: 000000000000000002000000
+    PropertyRangeLimits:
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    PropertyTexDims: 000000000000000000000000
+    IsHidden: 000000
   - Name: DummyPipeline/VariantStrippingTestsShader
     PropertyCount: 1
     PropertyDescriptions:
@@ -229,6 +308,55 @@ MonoBehaviour:
       Max: 0
     PropertyTexDims: 0200000000000000
     IsHidden: 0000
+  - Name: Hidden/2D-Animation-SpriteBitmask
+    PropertyCount: 1
+    PropertyDescriptions:
+    - Sprite Texture
+    PropertyNames:
+    - _MainTex
+    PropertyTypes: 04000000
+    PropertyRangeLimits:
+    - Def: 0
+      Min: 0
+      Max: 0
+    PropertyTexDims: 02000000
+    IsHidden: 00
+  - Name: Hidden/2D-Animation-SpriteEdgeOutline
+    PropertyCount: 1
+    PropertyDescriptions:
+    - Outline Color
+    PropertyNames:
+    - _OutlineColor
+    PropertyTypes: 00000000
+    PropertyRangeLimits:
+    - Def: 0
+      Min: 0
+      Max: 0
+    PropertyTexDims: 00000000
+    IsHidden: 00
+  - Name: Hidden/2D-Animation-SpriteOutline
+    PropertyCount: 3
+    PropertyDescriptions:
+    - Sprite Texture
+    - Outline Size
+    - Outline Color
+    PropertyNames:
+    - _MainTex
+    - _OutlineSize
+    - _OutlineColor
+    PropertyTypes: 040000000200000000000000
+    PropertyRangeLimits:
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    PropertyTexDims: 020000000000000000000000
+    IsHidden: 000000
   - Name: Hidden/BlitCopy
     PropertyCount: 2
     PropertyDescriptions:
@@ -580,6 +708,14 @@ MonoBehaviour:
       Max: 0
     PropertyTexDims: 0400000000000000
     IsHidden: 0000
+  - Name: Hidden/CW/ShapeOutline
+    PropertyCount: 0
+    PropertyDescriptions: []
+    PropertyNames: []
+    PropertyTypes: 
+    PropertyRangeLimits: []
+    PropertyTexDims: 
+    IsHidden: 
   - Name: Hidden/FrameDebuggerRenderTargetDisplay
     PropertyCount: 1
     PropertyDescriptions:
@@ -1054,6 +1190,29 @@ MonoBehaviour:
       Max: 0
     PropertyTexDims: 0100000002000000
     IsHidden: 0000
+  - Name: Hidden/InternalSpritesInspector
+    PropertyCount: 3
+    PropertyDescriptions:
+    - Sprite Texture
+    - Tint
+    - Pixel snap
+    PropertyNames:
+    - _MainTex
+    - _Color
+    - PixelSnap
+    PropertyTypes: 040000000000000002000000
+    PropertyRangeLimits:
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    PropertyTexDims: 020000000000000000000000
+    IsHidden: 000000
   - Name: Hidden/Internal-StencilWrite
     PropertyCount: 0
     PropertyDescriptions: []
@@ -2424,6 +2583,34 @@ MonoBehaviour:
       Max: 0
     PropertyTexDims: 000000000200000002000000000000000000000000000000000000000000000002000000000000000000000000000000020000000000000002000000000000000000000000000000000000000200000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     IsHidden: 000000000001010101010101010101010101010101010101010101010101010101
+  - Name: Hidden/SkinningModule-GUITextureClip
+    PropertyCount: 4
+    PropertyDescriptions:
+    - Texture
+    - Opacity
+    - VertexColorBlend
+    - Tint
+    PropertyNames:
+    - _MainTex
+    - _Opacity
+    - _VertexColorBlend
+    - _Color
+    PropertyTypes: 04000000020000000200000000000000
+    PropertyRangeLimits:
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    - Def: 0
+      Min: 0
+      Max: 0
+    PropertyTexDims: 01000000000000000000000000000000
+    IsHidden: 00000000
   - Name: Hidden/TerrainEngine/BillboardTree
     PropertyCount: 1
     PropertyDescriptions:

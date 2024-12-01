@@ -127,7 +127,7 @@ namespace Battlehub.Storage.Brick
         private void InitializeThumbnailUtil()
         {
             GameObject thumbnailUtilObj = new GameObject("ThumbnailUtil");
-            thumbnailUtilObj.transform.LookAt(-Vector3.one);
+            thumbnailUtilObj.transform.position = new Vector3(0, 0, -10f);
 
             ThumbnailUtil util = thumbnailUtilObj.AddComponent<ThumbnailUtil>();
             util.ThumbnailLayer = thumbnailLayer;

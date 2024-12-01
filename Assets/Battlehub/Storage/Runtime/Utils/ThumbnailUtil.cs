@@ -24,7 +24,7 @@ namespace Battlehub.Storage
         public int SnapshotTextureWidth = 128;
         public int SnapshotTextureHeight = 128;
         public Vector3 DefaultPosition = new Vector3(0, 0, 0);
-        public Vector3 DefaultRotation = new Vector3(26, 135, -24);
+        public Vector3 DefaultRotation = new Vector3(0, 0, 0);
         public Vector3 DefaultScale = new Vector3(1, 1, 1);
         private Renderer m_materialSphere;
 
@@ -74,7 +74,6 @@ namespace Battlehub.Storage
                 Debug.LogWarning($"Please set the {nameof(ThumbnailUtil)}.ThumbnailLayer to a value other than the Default.");
             }
         }
-
         public virtual Task<Texture2D> CreateThumbnailAsync(object obj, bool instantiate = true)
         {
             GameObject go;
@@ -139,7 +138,7 @@ namespace Battlehub.Storage
                 t.gameObject.layer = layer;
             }
         }
-
+        [Sirenix.OdinInspector.Button]
         protected Texture2D TakeObjectSnapshot(GameObject prefab, GameObject fallback, Vector3 position, Quaternion rotation, Vector3 scale, float previewScale, bool instantiate = true)
         {
             // validate properties

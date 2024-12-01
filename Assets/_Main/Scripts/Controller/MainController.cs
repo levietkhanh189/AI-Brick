@@ -7,18 +7,31 @@ using Battlehub.Storage.Brick;
 public class MainController : MonoBehaviour
 {
     public static MainController Instance;
-    private Action<VoxelGroupController> viewerModelAction;
-    private MainScreen mainScreen;
+
     public ImageGenerator imageGenerator;
     public VoxelImage voxelImage;
     public VoxelizerController voxelizerController;
     public ModelLoader modelLoader;
-    private VoxelGroupController voxelGroupController;
+    public Transform brickViewer;
+
     private GameObject sourceObject;
     private LoadModelScreen loadModelScreen;
+    private Action<VoxelGroupController> viewerModelAction;
+    private MainScreen mainScreen;
 
+    [Header("Debug")]
+    [SerializeField]
+    private VoxelGroupController voxelGroupController;
     private void Awake()
     {
+        #if !UNITY_EDITOR && UNITY_ANDROID
+        NativeGallery.Permission permission = NativeGallery.CheckPermission(NativeGallery.PermissionType.Read, NativeGallery.MediaType.Image);
+        if (permission != NativeGallery.Permission.Granted)
+        {
+            permission = NativeGallery.RequestPermission(NativeGallery.PermissionType.Read, NativeGallery.MediaType.Image);
+        }
+        #endif
+
         Instance = this;
     }
 
@@ -123,15 +136,27 @@ public class MainController : MonoBehaviour
 
                 LoadBlockModel(id, (bool value, GameObject myObject) =>
                 {
-                    if (voxelGroupController != null)
-                        AssetUsage.Instance.Release(voxelGroupController.gameObject);
-
-                    voxelGroupController = myObject.AddComponent<VoxelGroupController>();
-                    voxelGroupController.Init();
-                    SetModel(voxelGroupController);
+                    BrickViewer(myObject);
                 });
             }
         });
+    }
+
+    private void BrickViewer(GameObject myObject)
+    {
+        loadModelScreen.Hide();
+
+        if (voxelGroupController != null)
+            AssetUsage.Instance.Release(voxelGroupController.gameObject);
+
+        myObject.transform.parent = brickViewer;
+        voxelGroupController = myObject.GetComponent<VoxelGroupController>();
+        if (voxelGroupController == null)
+        {
+            voxelGroupController = myObject.AddComponent<VoxelGroupController>();
+            voxelGroupController.Init();
+        }
+        SetModel(voxelGroupController);
     }
 
     public void LoadBlockModel(string name, Action<bool, GameObject> action)
@@ -143,12 +168,7 @@ public class MainController : MonoBehaviour
     {
         LoadBlockModel(name, (bool value, GameObject myObject) =>
         {
-            if (voxelGroupController != null)
-                AssetUsage.Instance.Release(voxelGroupController.gameObject);
-
-            voxelGroupController = myObject.AddComponent<VoxelGroupController>();
-            voxelGroupController.Init();
-            SetModel(voxelGroupController);
+            BrickViewer(myObject);
         });
     }
 }
