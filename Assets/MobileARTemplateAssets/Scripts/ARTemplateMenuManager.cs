@@ -309,6 +309,7 @@ public class ARTemplateMenuManager : MonoBehaviour
     /// This is effectively an override of the default behavior or randomly spawning an object.
     /// </summary>
     /// <param name="objectIndex">The index in the array of the object to spawn with the ObjectSpawner</param>
+    [Sirenix.OdinInspector.Button]
     public void SetObjectToSpawn(int objectIndex)
     {
         if (m_ObjectSpawner == null)

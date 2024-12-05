@@ -144,7 +144,8 @@ public class MainController : MonoBehaviour
 
     private void BrickViewer(GameObject myObject)
     {
-        loadModelScreen.Hide();
+        if(loadModelScreen!= null)
+            loadModelScreen.Hide();
 
         if (voxelGroupController != null)
             AssetUsage.Instance.Release(voxelGroupController.gameObject);
