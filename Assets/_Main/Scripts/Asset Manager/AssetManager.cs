@@ -126,7 +126,11 @@ namespace Battlehub.Storage.Brick
         /// </summary>
         private void InitializeThumbnailUtil()
         {
-            GameObject thumbnailUtilObj = new GameObject("ThumbnailUtil");
+            var thumbnailUtil = gameObject.AddComponent<ThumbnailUtil>();
+            thumbnailUtil.ThumbnailLayer = thumbnailLayer;
+            this.thumbnailUtil = thumbnailUtil;
+
+            /*GameObject thumbnailUtilObj = new GameObject("ThumbnailUtil");
             thumbnailUtilObj.transform.position = new Vector3(0, 0, -10f);
 
             ThumbnailUtil util = thumbnailUtilObj.AddComponent<ThumbnailUtil>();
@@ -134,7 +138,7 @@ namespace Battlehub.Storage.Brick
             util.SnapshotTextureWidth = 512;
             util.SnapshotTextureHeight = 512;
 
-            thumbnailUtil = util;
+            thumbnailUtil = util;*/
         }
 
         /// <summary>

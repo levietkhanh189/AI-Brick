@@ -52,7 +52,7 @@ public class MainController : MonoBehaviour
     [Sirenix.OdinInspector.Button]
     public void GenerateTextToBlock2D(string promt, int subLevel = 27)
     {
-        loadModelScreen = DTNWindow.FindTopWindow().ShowSubView<LoadModelScreen>();
+        LoadModelScreen(true);
 
         imageGenerator.GenerateImage(promt, (string path,Texture2D texture) =>
         {
@@ -63,7 +63,7 @@ public class MainController : MonoBehaviour
     [Sirenix.OdinInspector.Button]
     public void GenerateTextToBlock3D(string promt, int subLevel = 27)
     {
-        loadModelScreen = DTNWindow.FindTopWindow().ShowSubView<LoadModelScreen>();
+        LoadModelScreen(true);
 
         imageGenerator.GenerateImage(promt, (string path, Texture2D texture) =>
         {
@@ -74,7 +74,7 @@ public class MainController : MonoBehaviour
     [Sirenix.OdinInspector.Button]
     public void GenerateImageToBlock2D(Texture2D texture = null, int subLevel = 27)
     {
-        loadModelScreen = DTNWindow.FindTopWindow().ShowSubView<LoadModelScreen>();
+        LoadModelScreen(true);
 
         voxelImage.gameObject.SetActive(true);
         voxelImage.SetImage(texture);
@@ -85,11 +85,26 @@ public class MainController : MonoBehaviour
     [Sirenix.OdinInspector.Button]
     public void GenerateImageToBlock3D(string imgPath = "", int subLevel = 27)
     {
-        loadModelScreen = DTNWindow.FindTopWindow().ShowSubView<LoadModelScreen>();
+        LoadModelScreen(true);
 
         modelLoader.GenerateModel(imgPath,(GameObject child)=> {
             VoxelizeMesh(subLevel, child);
         });
+    }
+
+    public void LoadModelScreen(bool value)
+    {
+        if (value)
+        {
+            if(loadModelScreen == null)
+                loadModelScreen = DTNWindow.FindTopWindow().ShowSubView<LoadModelScreen>();
+        }
+        else
+        {
+            if (loadModelScreen != null)
+                loadModelScreen.Hide();
+            loadModelScreen = null;
+        }
     }
 
     public void VoxelizeMesh(int subLevel,GameObject gameObject = null)
@@ -106,11 +121,11 @@ public class MainController : MonoBehaviour
         voxelImage.gameObject.SetActive(false);
 
         if(voxelGroupController != null)
-            AssetUsage.Instance.Release(voxelGroupController.gameObject);
+            Destroy(voxelGroupController.gameObject);
 
         VoxelAssemblyController voxelAssemblyController = gameObject.AddComponent<VoxelAssemblyController>();
         voxelGroupController = voxelAssemblyController.groupController;
-        loadModelScreen.Hide();
+        LoadModelScreen(false);
 
         ModelEditorScreen modelEditorScreen = DTNWindow.FindTopWindow().ShowSubView<ModelEditorScreen>();
         modelEditorScreen.SetModel(voxelGroupController);
@@ -144,8 +159,7 @@ public class MainController : MonoBehaviour
 
     private void BrickViewer(GameObject myObject)
     {
-        if(loadModelScreen!= null)
-            loadModelScreen.Hide();
+        LoadModelScreen(false);
 
         if (voxelGroupController != null)
             AssetUsage.Instance.Release(voxelGroupController.gameObject);
@@ -167,6 +181,8 @@ public class MainController : MonoBehaviour
 
     public void ShowBlockModel(string name)
     {
+        LoadModelScreen(true);
+
         LoadBlockModel(name, (bool value, GameObject myObject) =>
         {
             BrickViewer(myObject);

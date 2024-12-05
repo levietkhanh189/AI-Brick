@@ -56,4 +56,14 @@ public class VoxelGroupByY : MonoBehaviour
         isGroup = true;
         Debug.Log("Voxel grouping by Y complete.");
     }
+
+    public int CountVoxel()
+    {
+        int result = 0;
+        foreach (var item in groupParents)
+        {
+            result += item.transform.childCount;
+        }
+        return result;
+    }
 }

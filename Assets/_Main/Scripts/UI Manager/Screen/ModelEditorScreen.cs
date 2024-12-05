@@ -66,12 +66,6 @@ public class ModelEditorScreen : DTNView
     public void SetModel(VoxelGroupController voxelGroup)
     {
         this.voxelGroup = voxelGroup;
-
-        /* countVoxel = voxelGroup.GetComponent<CountVoxel>();
-         if(countVoxel == null)
-             countVoxel = voxelGroup.gameObject.AddComponent<CountVoxel>();
-
-         countText.text = countVoxel.Count() + " blocks";*/
-        countText.text = "-- blocks";
+        countText.text = voxelGroup.CountVoxel() + " blocks";
     }
 }

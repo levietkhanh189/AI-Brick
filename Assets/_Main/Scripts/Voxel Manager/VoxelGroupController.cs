@@ -16,6 +16,8 @@ public class VoxelGroupController : MonoBehaviour
     [Sirenix.OdinInspector.Button]
     public void Init(VoxelGroup voxelGroup,VoxelGroupByY voxelGroupByY)
     {
+        this.voxelGroup = voxelGroup;
+        this.voxelGroupByY = voxelGroupByY;
         this.defaultMaterial = voxelGroup.voxelMaterials[0];
         this.groupManagers = new List<GroupManager>();
         completeMaterial = Resources.Load<Material>("completeMaterial");
@@ -53,6 +55,11 @@ public class VoxelGroupController : MonoBehaviour
             children.Add(child.gameObject);
         }
         return children;
+    }
+
+    public int CountVoxel()
+    {
+        return voxelGroupByY.CountVoxel();
     }
 
     [Sirenix.OdinInspector.Button]

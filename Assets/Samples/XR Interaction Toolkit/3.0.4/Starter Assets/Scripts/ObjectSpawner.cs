@@ -216,6 +216,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 newObject.transform.parent = transform;
 
             newObject.transform.position = spawnPoint;
+            newObject.transform.localScale = Vector3.one;
             EnsureFacingCamera();
 
             var facePosition = m_CameraToFace.transform.position;
