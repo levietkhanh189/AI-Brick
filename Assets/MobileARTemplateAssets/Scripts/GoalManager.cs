@@ -320,7 +320,8 @@ public class GoalManager : MonoBehaviour
 
         m_GreetingPrompt.SetActive(false);
         m_OptionsButton.SetActive(true);
-        m_HomeButton.SetActive(true);
+        if(m_HomeButton != null)
+            m_HomeButton.SetActive(true);
         m_CreateButton.SetActive(true);
         m_MenuManager.enabled = true;
 
